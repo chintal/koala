@@ -13,15 +13,15 @@ def read(fname):
 
 
 setup(
-    name="koala",
+    name="tendril",
     version="0.1.0",
     author="Chintalagiri Shashank",
     author_email="shashank@chintal.in",
-    description="Koala framework",
+    description="Tendril framework",
     license="AGPLv3",
     keywords="",
-    url="https://github.com/chintal/koala",
-    package_dir={'koala': 'koala'},
+    url="https://github.com/chintal/tendril",
+    package_dir={'tendril': 'tendril'},
     packages=find_packages(exclude=['contrib', 'doc', 'tests*']),
     long_description=read('README.rst'),
     classifiers=[

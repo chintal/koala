@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Koala documentation build configuration file, created by
+# Tendril documentation build configuration file, created by
 # sphinx-quickstart on Sun Dec 28 19:09:19 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('../../'))
 sys.path.insert(0, '/home/chintal/code/workspaces/pycharm/documentedlist')
-sys.path.insert(0, '/home/chintal/code/virtualenvs/koala/lib/python2.7/site-packages')
+sys.path.insert(0, '/home/chintal/code/virtualenvs/tendril/lib/python2.7/site-packages')
 autodoc_default_flags = ['members', 'undoc-members', 'private-members', 'show-inheritance']
 autodoc_member_order = 'bysource'
 autoclass_content = 'init'
@@ -69,7 +69,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Koala'
+project = u'Tendril'
 copyright = u'2014-2015, Chintalagiri Shashank'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -203,7 +203,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Koala'
+htmlhelp_basename = 'Tendril'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -224,7 +224,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'Koala.tex', u'Koala Documentation',
+    ('index', 'Tendril.tex', u'Tendril Documentation',
      u'Chintalagiri Shashank', 'manual'),
 ]
 
@@ -254,7 +254,7 @@ latex_show_pagerefs = False
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'koala', u'Koala Documentation',
+    ('index', 'tendril', u'Tendril Documentation',
      [u'Chintalagiri Shashank'], 1)
 ]
 
@@ -268,8 +268,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'Koala', u'Koala Documentation',
-     u'Chintalagiri Shashank', 'Koala', 'One line description of project.',
+    ('index', 'Tendril', u'Tendril Documentation',
+     u'Chintalagiri Shashank', 'Tendril', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -289,13 +289,13 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Koala'
+epub_title = u'Tendril'
 epub_author = u'Chintalagiri Shashank'
 epub_publisher = u'Chintalagiri Shashank'
 epub_copyright = u'2014, Chintalagiri Shashank'
 
 # The basename for the epub file. It defaults to the project name.
-#epub_basename = u'Koala'
+#epub_basename = u'Tendril'
 
 # The HTML theme for the epub output. Since the default themes are not optimized
 # for small screen space, using the same theme for HTML and epub output is

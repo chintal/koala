@@ -89,17 +89,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Koala.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Tendril.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Koala.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Tendril.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/Koala"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Koala"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/Tendril"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Tendril"
 	@echo "# devhelp"
 
 epub:
@@ -182,8 +182,8 @@ pseudoxml:
 
 .PHONY: apidoc
 apidoc:
-	sphinx-apidoc -e -o apidoc/ ../koala/
+	sphinx-apidoc -e -o apidoc/ ../tendril/
 
 .PHONY: publish
 publish:
-	rsync -azP --delete $(BUILDDIR)/html/ koala@braavos:~/html
+	rsync -azP --delete $(BUILDDIR)/html/ tendril@braavos:~/html

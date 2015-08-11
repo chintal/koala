@@ -37,7 +37,7 @@ Device Classes
 The following are the allowed values for the Device Attributes. More should be added as needed.
 
 .. documentedlist::
-    :listobject: koala.conventions.electronics.DEVICE_CLASSES_DOC
+    :listobject: tendril.conventions.electronics.DEVICE_CLASSES_DOC
 
 
 Values

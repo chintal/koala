@@ -2,7 +2,7 @@
 License Overview
 ----------------
 
-The Koala sources are distributed under the terms of various Open Source
+The Tendril sources are distributed under the terms of various Open Source
 Licenses. Each source file contains within it the applicable license for
 that file.
 
@@ -23,7 +23,7 @@ Licenses
 --------
 
 * GNU Affero General Public License v3 (`LICENSE.AGPLv3.txt <_static/LICENSE.AGPLv3.txt>`_)
-	This is the "Dominant License" for Koala, and applies to most
+	This is the "Dominant License" for Tendril, and applies to most
 	Python source files included in the distribution.
 
 * MIT License (`LICENSE.MIT.txt <_static/LICENSE.MIT.txt>`_)
@@ -34,27 +34,27 @@ Licenses
 Licensing Roadmap
 -----------------
 
-Koala sources are distributed under the terms of the "Dominant License",
+Tendril sources are distributed under the terms of the "Dominant License",
 i.e. AGPLv3+, unless otherwise specified within individual source files.
 This license is chosen so as to remain compliant with the licenses of the
-various open source dependencies of Koala.
+various open source dependencies of Tendril.
 
 Over time, it is intended to refactor and release selected sections of
-Koala under a more permissive license. This refactoring and re-licensing
+Tendril under a more permissive license. This refactoring and re-licensing
 is proposed to be based on the following considerations, and tentatively
 under the listed licenses (in decreasing order of priority) :
 
 * Sections of code necessary for customizing reports, branding, formatting,
   and consequently enhancing integration with pre-existing Processes. (MIT)
 
-* Sections of code which are easily decoupled from the Koala core and have
-  clear applications independent of Koala. (LGPL)
+* Sections of code which are easily decoupled from the Tendril core and have
+  clear applications independent of Tendril. (LGPL)
 
 * Sections of code forming an 'API' that can be used to better integrate
-  Koala functionality with other Software or Infrastructure elements. (LGPL)
+  Tendril functionality with other Software or Infrastructure elements. (LGPL)
 
-* Sections of code forming an 'API' that can be used to extend Koala
-  functionality in ways which are not likely to be included within the Koala
+* Sections of code forming an 'API' that can be used to extend Tendril
+  functionality in ways which are not likely to be included within the Tendril
   core. (LGPL)
 
 * Sections of code clearly unencumbered by upstream licensing concerns. (GPL)

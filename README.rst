@@ -1,7 +1,7 @@
 
 
-The Koala Framework
-===================
+The Tendril Framework
+=====================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis nulla
 sit amet ipsum consectetur, in posuere libero semper. Nulla quis lectus sed

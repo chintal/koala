@@ -1,0 +1,34 @@
+tendril.conventions.motifs package
+================================
+
+Submodules
+----------
+
+.. toctree::
+
+   tendril.conventions.motifs.DLPF1
+   tendril.conventions.motifs.ING_AD8421
+   tendril.conventions.motifs.LPF1
+   tendril.conventions.motifs.LREGS1
+   tendril.conventions.motifs.ingbase
+   tendril.conventions.motifs.motifbase
+
+Module contents
+---------------
+
+.. automodule:: tendril.conventions.motifs
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Inheritance Diagram
+-------------------
+
+.. inheritance-diagram::
+    tendril.conventions.motifs
+    tendril.conventions.motifs.DLPF1
+    tendril.conventions.motifs.ING_AD8421
+    tendril.conventions.motifs.LPF1
+    tendril.conventions.motifs.LREGS1
+    tendril.conventions.motifs.ingbase
+    tendril.conventions.motifs.motifbase

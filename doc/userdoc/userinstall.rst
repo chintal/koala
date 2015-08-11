@@ -3,10 +3,10 @@
 Installation
 ============
 
-For the moment, koala is not designed to be installed to the system (/usr, /opt, etc). Such
+For the moment, tendril is not designed to be installed to the system (/usr, /opt, etc). Such
 installation scripts may be developed for later versions.
 
-Setting up Koala is essentially a matter of cloning/checking out the approriate git/svn repository
+Setting up Tendril is essentially a matter of cloning/checking out the approriate git/svn repository
 and providing the software with a suitable environment which contains all the necessary dependencies.
 The instructions listed here are for Ubuntu, and should work as-is on most Debian based Linux distributions.
 
@@ -87,20 +87,20 @@ See `<http://davebehnke.com/python-pyenv-ubuntu.html>`_ for a more detailed expl
 Getting the Code
 ****************
 
-The code can be obtained from the version control system. For users, the specific instance of ``koala``
+The code can be obtained from the version control system. For users, the specific instance of ``tendril``
 applicable to the organization should be checked out from the locally controlled repository. This repository
 should be essentially ``read-only`` with a specific set of people administering the installation. Until the
 details can be worked out, use the following checkouts:
 
     * Users:
 
-        ``svn co svn://svnserver.qznet/koala``
+        ``svn co svn://svnserver.qznet/tendril``
 
         Access control isn't set up. Please don't commit to this unless absolutely necessary, and even then
         run it by an administrator first.
     * Administrators:
 
-        ``svn co svn://svnserver.qznet/koala``
+        ``svn co svn://svnserver.qznet/tendril``
 
         Access control isn't set up. Commits should generally be limited to instance-specific areas.
     * Developers:
@@ -138,14 +138,14 @@ See `<http://simononsoftware.com/virtualenv-tutorial-part-2/>`_ for a more detai
 
         .. code-block:: bash
 
-            cd /path/to/koala/checkout/trunk/
-            mkvirtualenv -p `pyenv which python` --no-site-packages koala
+            cd /path/to/tendril/checkout/trunk/
+            mkvirtualenv -p `pyenv which python` --no-site-packages tendril
 
     If you're just using ``system`` python,
 
         .. code-block:: bash
 
-            mkvirtualenv --no-site-packages koala
+            mkvirtualenv --no-site-packages tendril
 
  5. ``mkvirtualenv`` leaves you with the new virtualenv active. To deactivate,
 
@@ -157,7 +157,7 @@ See `<http://simononsoftware.com/virtualenv-tutorial-part-2/>`_ for a more detai
 
         .. code-block:: bash
 
-            workon koala
+            workon tendril
 
 
 Installing the Dependencies
@@ -167,7 +167,7 @@ Installing the Dependencies
 
         .. code-block:: bash
 
-            cd /path/to/koala/checkout/trunk/
+            cd /path/to/tendril/checkout/trunk/
             pip install -r requirements.txt
 
  2. Install ``sofficehelpers``:
@@ -175,7 +175,7 @@ Installing the Dependencies
         ``sofficehelpers`` is a collection of scripts to deal with ``libreoffice`` documents. As of this
         version, this only includes a small script (ssconvertor) to convert a spreadsheet into csv files.
         The libreoffice python interface (``uno``) requires the use of the python bundled into libreoffice,
-        and therefore is kept separate from the rest of koala. There are plenty of other (and simpler) ways
+        and therefore is kept separate from the rest of tendril. There are plenty of other (and simpler) ways
         to achieve the same effect, inculding a number of uno-based scripts to do this. The custom script is
         retained for the moment to maintain a functional base upon which additional functionality can be added
         on as needed. If another solution is to be used instead, appropriate changes should be made

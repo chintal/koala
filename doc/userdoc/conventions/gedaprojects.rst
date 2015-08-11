@@ -17,12 +17,12 @@ The minimal set of tools which the user should expect to interact with are :
     - ``gsch2pcb``, operating on schematics to create / update the pcb.
     - ``pcb``, operating on pcb.
 
-The ``gedaif`` package of koala contains scripts that use these and other ``gEDA`` tools to perform
+The ``gedaif`` package of tendril contains scripts that use these and other ``gEDA`` tools to perform
 various functions, and assume a specific file and folder layout. Any deviation from the specified
 layout is likely to result in anything from runtime errors to silent omissions from the resultant
 data.
 
-Some of the files documented in this section are standard ``gEDA`` files, while others are ``koala``
+Some of the files documented in this section are standard ``gEDA`` files, while others are ``tendril``
 specific files.
 
 A gEDA Project
@@ -104,17 +104,17 @@ Project Folder Structure
         |   ..
         `-- trunk
             |-- ChangeLog
-            |-- gerber                          (all-generated-koala)
+            |-- gerber                          (all-generated-tendril)
             |   |-- [projname].[layer].gbr or cnc
             |   ..
-            |-- [projname]-gerber.zip           (generated-koala)
+            |-- [projname]-gerber.zip           (generated-tendril)
             |
             |-- pcb
             |   |-- [projname].cmd              (generated-gsch2pcb)
-            |   |-- [projname].dxf              (generated-koala)
+            |   |-- [projname].dxf              (generated-tendril)
             |   |-- [projname].net              (generated-gsch2pcb)
             |   |-- [projname].pcb
-            |   `-- sourcing.yaml               (generated-koala-manual)
+            |   `-- sourcing.yaml               (generated-tendril-manual)
             |
             |-- schematic
             |   |-- [schname-1].sch
@@ -125,7 +125,7 @@ Project Folder Structure
             |   |-- readme.txt                  (project-template-manual)
             |   `-- configs.yaml                (project-template-manual)
             |
-            `-- doc                             (all-generated-koala)
+            `-- doc                             (all-generated-tendril)
                 |-- [projname]-masterdoc.pdf
                 |-- [projname]-configs.pdf
                 |-- [projname]-schematic.pdf
