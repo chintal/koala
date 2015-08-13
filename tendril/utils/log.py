@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Log Utils Module (:mod:`tendril.utils.log`)
-=============================================
+===============================================
 
 This module provides utilities to deal with logging systems. The intent of
 having this module instead of using :mod:`logging` directly is to allow the

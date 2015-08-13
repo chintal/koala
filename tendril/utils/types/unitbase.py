@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 Base Unit Types (:mod:`tendril.utils.types.unitbase`)
-===================================================
+=====================================================
 
 The Types provided in this module are not intended for direct use. Instead,
 they provide reusable primitives which can be sub-classed to provide functional

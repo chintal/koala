@@ -52,7 +52,6 @@ if __name__ == "__main__":
     orderfolder = os.path.join(INSTANCE_ROOT, 'scratch', 'production')
     orderfile = os.path.join(orderfolder, 'order.yaml')
 
-
     with open(orderfile, 'r') as f:
         data = yaml.load(f)
 

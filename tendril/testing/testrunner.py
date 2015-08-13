@@ -61,6 +61,7 @@ def get_testobj_from_cnf_test(cnf_test, testvars, bomobj):
     if 'desc' in vardict.keys():
         testobj.desc = vardict.pop('desc')
     testobj.configure(**vardict)
+    testobj.use_bom(bomobj)
     logger.info("Adding test object to suite : " + repr(testobj))
     return testobj
 
@@ -72,6 +73,7 @@ def get_suiteobj_from_cnf_suite(cnf_suite, gcf, devicetype):
     cnf_suite_name = cnf_suite.keys()[0]
     testvars = gcf.testvars(devicetype)
     bomobj = import_pcb(gcf.projectfolder)
+    bomobj.configure_motifs(devicetype)
     logger.debug("Creating test suite : " + cnf_suite_name)
     if cnf_suite_name == "TestSuiteBase":
         suite = TestSuiteBase()

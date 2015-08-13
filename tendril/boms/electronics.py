@@ -394,6 +394,24 @@ class EntityElnBom(EntityBomBase):
                 return motif
         return None
 
+    def configure_motifs(self, configname):
+        motifconfs = self.configurations.get_configuration_motifs(configname)
+        if motifconfs is not None:
+            for key, motifconf in motifconfs.iteritems():
+                motif = self.get_motif_by_refdes(key)
+                if motif is None:
+                    logger.error("Motif not defined : " + key)
+                    continue
+                motifconf_act = motif.get_configdict_stub()
+                if self.configurations.motiflist is not None:
+                    basemotifconfs = self.configurations.motiflist
+                    for bkey, baseconf in basemotifconfs.iteritems():
+                        if bkey == key:
+                            logger.debug("Found Base Configuration for : " + key)
+                            motifconf_act.update(baseconf)
+                motifconf_act.update(motifconf)
+                motif.configure(motifconf_act)
+
     def create_output_bom(self, configname):
         if configname not in self.configurations.get_configurations():
             raise ValueError
@@ -440,20 +458,13 @@ class EntityElnBom(EntityBomBase):
             outbom.sort_by_ident()
             return outbom
 
+        self.configure_motifs(configname)
+
         for key, motifconf in motifconfs.iteritems():
             motif = self.get_motif_by_refdes(key)
             if motif is None:
                 logger.error("Motif not defined : " + key)
                 continue
-            motifconf_act = motif.get_configdict_stub()
-            if self.configurations.motiflist is not None:
-                basemotifconfs = self.configurations.motiflist
-                for bkey, baseconf in basemotifconfs.iteritems():
-                    if bkey == key:
-                        logger.debug("Found Base Configuration for : " + key)
-                        motifconf_act.update(baseconf)
-            motifconf_act.update(motifconf)
-            motif.configure(motifconf_act)
             for item in motif.get_line_gen():
                 if item.data['group'] in outgroups and item.data['fillstatus'] != 'DNP':
                     outbom.insert_component(EntityElnComp(item))

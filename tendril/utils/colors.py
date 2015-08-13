@@ -21,7 +21,7 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 The Colors Module (:mod:`tendril.utils.colors`)
-=============================================
+===============================================
 
 This module provides RGB color palettes, which can be used by
 application code for rendering things.

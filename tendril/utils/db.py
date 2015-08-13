@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Database Utils Module (:mod:`tendril.utils.db`)
-=================================================
+===================================================
 
 This module provides utilities to deal with Tendril's Database. While the actual
 functionality is provided by the :mod:`sqlalchemy` package, the contents of
@@ -34,7 +34,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.ext.declarative import declared_attr
-from sqlalchemy import Column, Integer, DateTime
+from sqlalchemy import Column, Integer
 from sqlalchemy_utils import ArrowType
 
 

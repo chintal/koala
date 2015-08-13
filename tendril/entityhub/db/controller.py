@@ -65,6 +65,7 @@ def delete_serialno(sno=None, session=None):
 
 @with_db
 def link_serialno(child=None, parent=None, association_type=None, session=None):
+
     if not isinstance(child, SerialNumber):
         child = get_serialno_object(sno=child, session=session)
     if not isinstance(parent, SerialNumber):
@@ -83,3 +84,23 @@ def link_serialno(child=None, parent=None, association_type=None, session=None):
     session.add(assoc_object)
     session.flush()
     return assoc_object
+
+
+@with_db
+def get_child_snos(serialno=None, child_efield=None, child_series=None, session=None):
+
+    if serialno is None:
+        raise ValueError("serialno cannot be None")
+    if not isinstance(serialno, SerialNumber):
+        serialno = get_serialno_object(sno=serialno, session=session)
+
+    q = session.query(SerialNumberAssociation).filter_by(parent_id=serialno.id)
+    q = q.join(SerialNumberAssociation.child)
+
+    if child_efield is not None:
+        q = q.filter(SerialNumber.efield == child_efield)
+
+    if child_series is not None:
+        q = q.filter(SerialNumber.sno.like(child_series+'%'))
+
+    return [x.child.sno for x in q.all()]

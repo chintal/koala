@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The LibreOffice Utils Module (:mod:`tendril.utils.libreoffice`)
-=============================================================
+===============================================================
 
 This module provides utilities to deal with LibreOffice files. Functionality is
 implemented lazily, so this doesn't really do much.

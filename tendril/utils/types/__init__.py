@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Types Package (:mod:`tendril.utils.types`)
-============================================
+==============================================
 
 The :mod:`tendril.utils.types` package, like all the :mod:`tendril.utils` modules,
 includes code that ideally resides outside of Tendril itself, perhaps using some

@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The WWW Utils Module (:mod:`tendril.utils.www`)
-=============================================
+===============================================
 
 This module provides utilities to deal with the internet. All application code
 should access the internet through this module, since this where support for

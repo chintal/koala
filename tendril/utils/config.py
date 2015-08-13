@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Config Module (:mod:`tendril.utils.config`)
-=============================================
+===============================================
 
 This module provides the core configuration for Tendril.
 

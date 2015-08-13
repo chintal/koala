@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The PDF Utils Module (:mod:`tendril.utils.pdfutils`)
-==================================================
+====================================================
 
 This module contains small helper functions to handle PDF files. These
 functions are independent of the rest of the software and can be reused

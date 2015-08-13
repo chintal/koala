@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 Currency Types (:mod:`tendril.utils.types.currency`)
-==================================================
+====================================================
 
 The :mod:`tendril.utils.types.currency` contains classes which allow for easy
 use and manipulation of currency values. The primary focus is on the primary

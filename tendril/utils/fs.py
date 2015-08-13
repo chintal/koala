@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Filesystem Utils Module (:mod:`tendril.utils.fs`)
-===================================================
+=====================================================
 
 This module provides utilities to deal with filesystems. For the most part,
 this module basically proxies specific requests to various other third-party

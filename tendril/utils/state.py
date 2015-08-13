@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Persistent State Utils Module (:mod:`tendril.utils.state`)
-============================================================
+==============================================================
 
 This module uses :mod:`dataset` to provide a means to store persistent
 state information. Note that this means of storing persistent information

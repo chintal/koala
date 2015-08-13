@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 The Utils Package (:mod:`tendril.utils`)
-======================================
+========================================
 
 The :mod:`utils` package contains various Utils modules which provide
 functionality that is either :

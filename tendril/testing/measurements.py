@@ -147,7 +147,7 @@ class DCVoltageMeasurement(TestSimpleMeasurement):
             self._input = self._inputchannel.get()
             # if self._input.unitclass and not self._input.unitclass == self._inputtype:
             #     raise TypeError("Expected " + self._inputtype.unitclass + ", got " + type(self._input))
-
+        logger.info("Measured Voltage: " + repr(self._input))
         self._ts = arrow.utcnow()
 
     @property

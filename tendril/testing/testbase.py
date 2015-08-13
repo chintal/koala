@@ -22,9 +22,6 @@ See the COPYING, README, and INSTALL files for more information
 from tendril.utils import log
 logger = log.get_logger(__name__, log.INFO)
 
-import time
-import arrow
-
 
 class TestPrepBase(object):
     """ Object representing a preparatory step for a Test """
@@ -108,6 +105,7 @@ class TestBase(RunnableTest):
         self._measurements = []
         self._result = None
         self.variables = {}
+        self._bom_object = None
 
     def add_measurement(self, measurement):
         measurement.parent = self
@@ -123,6 +121,9 @@ class TestBase(RunnableTest):
 
     def configure(self, **kwargs):
         self.variables.update(kwargs)
+
+    def use_bom(self, bomobj):
+        self._bom_object = bomobj
 
     def add_prep(self, prep):
         prep.parent = self
